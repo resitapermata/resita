@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import SliderApp from "../components/Slider";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const TIPS = [
@@ -112,7 +113,7 @@ export default function Home() {
           <h2 className="text-white text-[32px] font-bold mb-[30px]">
             Youre all set.
           </h2>
-          <p className="text-white text-[16px] text-base mb-[471px]">
+          <p className="text-white text-[16px] text-base mb-[404px]">
             The wise man therefore always holds in these matters to this
             principle of selection.{" "}
           </p>
@@ -122,6 +123,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
