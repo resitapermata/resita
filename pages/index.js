@@ -47,9 +47,9 @@ export default function Home() {
         />
         <p className="text-black text-base mb-[20px]">
           <span className="text-[#0B24FB] font-bold">Deffinition;</span> a
-          practice or exercise to test or improve one's fitness for athletic
-          competition, ability, or performance to exhaust (something, such as a
-          mine) by working to devise, arrange, or achieve by resolving
+          practice or exercise to test or improve one&apos;s fitness for
+          athletic competition, ability, or performance to exhaust (something,
+          such as a mine) by working to devise, arrange, or achieve by resolving
           difficulties. Merriam-Webster.com Dictionary.
         </p>
         <p className="text-white font-bold italic">-weekend team</p>
