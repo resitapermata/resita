@@ -7,15 +7,15 @@ export default function Home() {
   const TIPS = [
     {
       title: "Start quickly with simple steps",
-      img: "https://i.pravatar.cc/300",
+      img: "/assets/item-1.png",
     },
     {
-      title: "Start quickly with simple steps",
-      img: "https://i.pravatar.cc/300",
+      title: "Run smoothly at vero eos et accusamus",
+      img: "/assets/item-2.png",
     },
     {
-      title: "Start quickly with simple steps",
-      img: "https://i.pravatar.cc/300",
+      title: "Denounce with righteous indignation",
+      img: "/assets/item-3.png",
     },
   ];
   return (
@@ -95,15 +95,31 @@ export default function Home() {
       </div>
 
       {/* section 5 */}
-      <div className="bg-black">
+      <div className="bg-black pt-[30px] pb-[33px] px-[32px] text-left">
         <h2 className="text-white text-[32px] font-bold mb-[30px]">
           Help & Tips
         </h2>
-
-        <div className="px-6 md:grid grid-cols-3 gap-x-6">
+        <div className="pt-[10px] px-0 md:grid grid-cols-3 gap-x-6">
           {TIPS.map((item) => (
             <Card key={item.title} src={item.img} text={item.title} />
           ))}
+        </div>
+      </div>
+
+      {/* section 6 */}
+      <div className="relative bg-black pt-[30px] pb-[33px] px-[32px] text-left">
+        <div>
+          <h2 className="text-white text-[32px] font-bold mb-[30px]">
+            Youre all set.
+          </h2>
+          <p className="text-white text-[16px] text-base mb-[471px]">
+            The wise man therefore always holds in these matters to this
+            principle of selection.{" "}
+          </p>
+          <img
+            className="absolute bottom-0 left-0 h-[337px] w-[253px]"
+            src="/assets/BG_3.png"
+          />
         </div>
       </div>
     </div>

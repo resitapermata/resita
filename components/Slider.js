@@ -15,7 +15,7 @@ function SliderApp() {
         {[1, 2, 3].map((item) => (
           <div key={item} className="pr-2">
             <div className="bg-white text-black p-5">
-              <h2>Blu Kicks</h2>
+              <h2 className="text-[32px] font-bold">Blu Kicks</h2>
               <p>
                 Places where you can leverage tools and software to free up time
                 to focus on growing the business.
