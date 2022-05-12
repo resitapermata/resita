@@ -96,7 +96,9 @@ export default function Home() {
 
       {/* section 5 */}
       <div className="bg-black">
-        <h2 className="text-white text-xl font-bold px-6">Help & Tips</h2>
+        <h2 className="text-white text-[32px] font-bold mb-[30px]">
+          Help & Tips
+        </h2>
 
         <div className="px-6 md:grid grid-cols-3 gap-x-6">
           {TIPS.map((item) => (
