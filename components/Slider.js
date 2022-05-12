@@ -13,10 +13,12 @@ function SliderApp() {
     <div>
       <Slider {...settings}>
         {[1, 2, 3].map((item) => (
-          <div key={item} className="pr-2">
+          <div key={item} className="pr-2 w-[247px] h-[140px] sm:max-w-md">
             <div className="bg-white text-black p-5">
-              <h2 className="text-[32px] font-bold">Blu Kicks</h2>
-              <p>
+              <h2 className="px-[20px] py-[20py] text-[32px] font-bold">
+                Blu Kicks
+              </h2>
+              <p className="px-[20px] py-[20py] text-[12px]">
                 Places where you can leverage tools and software to free up time
                 to focus on growing the business.
               </p>

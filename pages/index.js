@@ -23,7 +23,7 @@ export default function Home() {
     <div>
       <Navbar />
       {/* section 1 */}
-      <div className="relative bg-[url('/assets/BG_1.png')] bg-[#EEBECE] bg-no-repeat bg-cover py-[67px] px-[24px] text-center">
+      <div className="relative bg-[url('/assets/BG_1.png')] bg-[#EEBECE] bg-no-repeat bg-cover py-[67px] px-[24px] text-center sm:bg-[url('/assets/BG_Besar.png')] sm:h-[1150px]">
         <h1 className="text-white text-[52px] font-bold mb-[20px]">
           WEEKEND FROM HOME
         </h1>
@@ -31,7 +31,7 @@ export default function Home() {
           Stay active with a little workout.
         </p>
         <img
-          className="absolute inset-x-0 bottom-[20px] w-full object-contain h-[300px]"
+          className="absolute inset-x-0 bottom-[20px] w-full object-contain h-[300px] "
           src="/assets/lego.png"
         />
         <div className="relative">
@@ -46,14 +46,16 @@ export default function Home() {
           className="absolute top-0 right-0 w-full object-contain object-right h-[158px]"
           src="/assets/BG_2.png"
         />
-        <p className="text-black text-base mb-[20px]">
+        <p className="text-black text-base text-[16px] font-bolt mb-[20px] max-w-[619px] mx-auto sm:text-[21px]">
           <span className="text-[#0B24FB] font-bold">Deffinition;</span> a
           practice or exercise to test or improve one&apos;s fitness for
           athletic competition, ability, or performance to exhaust (something,
           such as a mine) by working to devise, arrange, or achieve by resolving
           difficulties. Merriam-Webster.com Dictionary.
         </p>
-        <p className="text-white font-bold italic">-weekend team</p>
+        <p className="text-white font-bold italic max-w-[619px] mx-auto sm:text-[21px]">
+          -weekend team
+        </p>
       </div>
 
       {/* section 3 */}
@@ -64,7 +66,7 @@ export default function Home() {
           src="/assets/biru.png"
         />
         <div className="relative">
-          <h2 className="text-white text-[32px] font-bold mb-[30px]">
+          <h2 className="text-white text-[32px] font-bold mb-[30px] sm:text-center">
             Testimonial
           </h2>
           <SliderApp />
@@ -72,10 +74,10 @@ export default function Home() {
       </div>
 
       {/* section 4 */}
-      <div className="relative bg-black pt-[30px] pb-[33px] px-[32px] text-left">
+      <div className="relative bg-black pt-[30px] pb-[33px] px-[32px] text-left sm:text-center">
         <div>
           <h2 className="text-white text-[32px] font-bold mb-[30px]">POV</h2>
-          <p className="text-white text-[16px] text-base mb-[67px]">
+          <p className="text-white text-[16px] text-base mb-[67px] max-w-[619px] mx-auto sm:text-[18px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud ullamco laboris nisi ea commodo
@@ -87,7 +89,7 @@ export default function Home() {
           <h2 className="text-white text-[32px] font-bold mb-[30px]">
             Resource
           </h2>
-          <p className="text-white text-[16px] text-base">
+          <p className="text-white text-[16px] text-base max-w-[619px] mx-auto sm:text-[18px]">
             These cases are perfectly simple and easy to distinguish. In a free
             hour, when our power of choice is untrammelled and when nothing
             prevents our being able to do what we like best
@@ -96,7 +98,7 @@ export default function Home() {
       </div>
 
       {/* section 5 */}
-      <div className="bg-black pt-[30px] pb-[33px] px-[32px] text-left">
+      <div className="bg-black pt-[30px] pb-[33px] px-[32px] text-left sm:text-center">
         <h2 className="text-white text-[32px] font-bold mb-[30px]">
           Help & Tips
         </h2>
@@ -108,12 +110,12 @@ export default function Home() {
       </div>
 
       {/* section 6 */}
-      <div className="relative bg-black pt-[30px] pb-[33px] px-[32px] text-left">
+      <div className="relative bg-black pt-[30px] pb-[33px] px-[32px] text-left sm:text-center">
         <div>
           <h2 className="text-white text-[32px] font-bold mb-[30px]">
             Youre all set.
           </h2>
-          <p className="text-white text-[16px] text-base mb-[404px]">
+          <p className="text-white text-[16px] text-base mb-[404px] max-w-[619px] mx-auto sm:text-[18px]">
             The wise man therefore always holds in these matters to this
             principle of selection.{" "}
           </p>
