@@ -8,14 +8,25 @@ function SliderApp() {
     speed: 500,
     slidesToShow: 1.5,
     slidesToScroll: 1.5,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1.5,
+          infinite: false,
+          dots: false,
+        },
+      },
+    ],
   };
   return (
     <div>
       <Slider {...settings}>
         {[1, 2, 3].map((item) => (
-          <div key={item} className="pr-2 w-[247px] h-[140px] sm:max-w-md">
+          <div key={item} className="pr-2">
             <div className="bg-white text-black p-5">
-              <h2 className="px-[20px] py-[20py] text-[32px] font-bold">
+              <h2 className="px-[20px] py-[20py] text-[32px] font-bold ">
                 Blu Kicks
               </h2>
               <p className="px-[20px] py-[20py] text-[12px]">

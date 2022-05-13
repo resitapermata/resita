@@ -2,10 +2,12 @@ import React from "react";
 
 function Card({ src, text }) {
   return (
-    <div className="relative w-[311px] h-[176px] overflow-hidden mb-2 sm:max-w-md mx-auto">
+    <div className="relative w-full h-[176px] overflow-hidden mb-2">
       <img className="w-full object-cover" src={src} alt="blabla " />
       <div className="absolute inset-x-0 bottom-0 bg-black text-white bg-opacity-50 flex justify-between items-center">
-        <h5 className="px-[25px] py-[17px] text-[16px] font-bold">{text}</h5>
+        <h5 className="px-[25px] py-[17px] text-[16px] font-bold sm:text-left">
+          {text}
+        </h5>
         <button>
           {"->"}
           {/* <svg

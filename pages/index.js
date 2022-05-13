@@ -23,7 +23,7 @@ export default function Home() {
     <div>
       <Navbar />
       {/* section 1 */}
-      <div className="relative bg-[url('/assets/BG_1.png')] bg-[#EEBECE] bg-no-repeat bg-cover py-[67px] px-[24px] text-center sm:bg-[url('/assets/BG_Besar.png')] sm:h-[1150px]">
+      <div className="relative bg-[url('/assets/BG_1.png')] bg-[#EEBECE] bg-no-repeat bg-cover py-[67px] px-[24px] text-center sm:bg-[url('/assets/BG_Besar.png')] sm:max-w-[1366px] mx-auto">
         <h1 className="text-white text-[52px] font-bold mb-[20px]">
           WEEKEND FROM HOME
         </h1>
@@ -65,7 +65,7 @@ export default function Home() {
           className="absolute top-0 left-[57] h-[89px] w-[89px]"
           src="/assets/biru.png"
         />
-        <div className="relative">
+        <div className="relative sm:max-w-[621px] mx-auto">
           <h2 className="text-white text-[32px] font-bold mb-[30px] sm:text-center">
             Testimonial
           </h2>
@@ -98,11 +98,11 @@ export default function Home() {
       </div>
 
       {/* section 5 */}
-      <div className="bg-black pt-[30px] pb-[33px] px-[32px] text-left sm:text-center">
+      <div className="bg-black pt-[30px] pb-[33px] px-[32px] text-left sm:text-center sm:bg-[url('/assets/pink.png')] sm:bg-no-repeat">
         <h2 className="text-white text-[32px] font-bold mb-[30px]">
           Help & Tips
         </h2>
-        <div className="pt-[10px] px-0 md:grid grid-cols-3 gap-x-6">
+        <div className="pt-[10px] px-0 md:grid grid-cols-3 gap-x-6 sm:max-w-[800px] mx-auto">
           {TIPS.map((item) => (
             <Card key={item.title} src={item.img} text={item.title} />
           ))}
