@@ -23,18 +23,18 @@ export default function Home() {
     <div>
       <Navbar />
       {/* section 1 */}
-      <div className="relative bg-[url('/assets/BG_1.png')] bg-[#EEBECE] bg-no-repeat bg-cover py-[67px] px-[24px] text-center sm:bg-[url('/assets/BG_Besar.png')] sm:max-w-[1366px] mx-auto">
-        <h1 className="text-white text-[52px] font-bold mb-[20px]">
+      <div className="relative bg-[url('/assets/BG_1.png')] bg-[#EEBECE] bg-no-repeat bg-cover py-[67px] px-[24px] text-center sm:bg-[url('/assets/BG_Besar.png')] sm:max-w-full mx-auto">
+        <h1 className="text-white text-[52px] font-bold mb-[20px] sm:text-[62px] sm:mt-[17px] sm:px-[322px]">
           WEEKEND FROM HOME
         </h1>
-        <p className="text-white text-base italic mb-[267px]">
+        <p className="text-white text-base italic mb-[267px] text-[16px] sm:text-[21px] sm:mt-[20px]">
           Stay active with a little workout.
         </p>
         <img
-          className="absolute inset-x-0 bottom-[20px] w-full object-contain h-[300px] "
+          className="absolute inset-x-0 bottom-[20px] w-full object-contain h-[300px] sm:mb-[155px]"
           src="/assets/lego.png"
         />
-        <div className="relative">
+        <div className="relative sm:mt-[514px] sm:mb-[196px]">
           <Button>Lets Go</Button>
         </div>
         <></>
@@ -98,7 +98,7 @@ export default function Home() {
       </div>
 
       {/* section 5 */}
-      <div className="bg-black pt-[30px] pb-[33px] px-[32px] text-left sm:text-center sm:bg-[url('/assets/pink.png')] sm:bg-no-repeat">
+      <div className="bg-black pt-[30px] pb-[33px] px-[32px] text-left sm:text-center sm:bg-[url('/assets/pink.png')] sm:bg-no-repeat sm:bg-right">
         <h2 className="text-white text-[32px] font-bold mb-[30px]">
           Help & Tips
         </h2>
