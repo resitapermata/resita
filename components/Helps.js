@@ -1,7 +1,7 @@
-import Slider from "react-slick";
+import Card from "../components/Card";
 import React from "react";
 
-class SliderApp extends React.Component {
+class Helps extends React.Component {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,7 @@ class SliderApp extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://wknd-take-home-challenge-api.herokuapp.com/testimonial")
+    fetch("https://wknd-take-home-challenge-api.herokuapp.com/help-tips")
       .then((res) => res.json())
       .then((json) => {
         this.setState({
@@ -47,24 +47,32 @@ class SliderApp extends React.Component {
     <div className="loader"></div>;
 
     return (
-      <div>
-        <Slider {...settings}>
-          {items.map((item) => (
-            <div key={item.id} className="pr-2">
-              <div className="bg-white text-black p-5">
-                <h2 className="px-[20px] py-[20py] text-[32px] font-bold ">
-                  {item.by}
-                </h2>
-                <p className="px-[20px] py-[20py] text-[12px]">
-                  {item.testimony}
-                </p>
-              </div>
-            </div>
-          ))}
-        </Slider>
+      <div className="pt-[10px] px-0 md:grid grid-cols-3 gap-x-6 sm:max-w-[800px] mx-auto">
+        {items.map((item) => (
+          <Card key={item.id} src={item.image} text={item.title} />
+        ))}
       </div>
     );
   }
 }
 
-export default SliderApp;
+export default Helps;
+
+{
+  /* <div>
+<Slider {...settings}>
+  {items.map((item) => (
+    <div key={item.id} className="pr-2">
+      <div className="bg-white text-black p-5">
+        <h2 className="px-[20px] py-[20py] text-[32px] font-bold ">
+          {item.by}
+        </h2>
+        <p className="px-[20px] py-[20py] text-[12px]">
+          {item.testimony}
+        </p>
+      </div>
+    </div>
+  ))}
+</Slider>
+</div> */
+}

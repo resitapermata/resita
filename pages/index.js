@@ -1,24 +1,10 @@
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import SliderApp from "../components/Slider";
-import Card from "../components/Card";
 import Footer from "../components/Footer";
+import Helps from "../components/Helps";
 
 export default function Home() {
-  const TIPS = [
-    {
-      title: "Start quickly with simple steps",
-      img: "/assets/item-1.png",
-    },
-    {
-      title: "Run smoothly at vero eos et accusamus",
-      img: "/assets/item-2.png",
-    },
-    {
-      title: "Denounce with righteous indignation",
-      img: "/assets/item-3.png",
-    },
-  ];
   return (
     <div>
       <Navbar />
@@ -102,11 +88,7 @@ export default function Home() {
         <h2 className="text-white text-[32px] font-bold mb-[30px]">
           Help & Tips
         </h2>
-        <div className="pt-[10px] px-0 md:grid grid-cols-3 gap-x-6 sm:max-w-[800px] mx-auto">
-          {TIPS.map((item) => (
-            <Card key={item.title} src={item.img} text={item.title} />
-          ))}
-        </div>
+        <Helps />
       </div>
 
       {/* section 6 */}
