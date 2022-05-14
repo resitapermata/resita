@@ -30,4 +30,3 @@ function Card({ src, text }) {
 }
 
 export default Card;
-oo
