@@ -57,22 +57,3 @@ class Helps extends React.Component {
 }
 
 export default Helps;
-
-{
-  /* <div>
-<Slider {...settings}>
-  {items.map((item) => (
-    <div key={item.id} className="pr-2">
-      <div className="bg-white text-black p-5">
-        <h2 className="px-[20px] py-[20py] text-[32px] font-bold ">
-          {item.by}
-        </h2>
-        <p className="px-[20px] py-[20py] text-[12px]">
-          {item.testimony}
-        </p>
-      </div>
-    </div>
-  ))}
-</Slider>
-</div> */
-}
