@@ -51,7 +51,7 @@ class SliderApp extends React.Component {
         <Slider {...settings}>
           {items.map((item) => (
             <div key={item.id} className="pr-2">
-              <div className="bg-white text-black p-5">
+              <div className="bg-white text-black p-5 h-[140px]">
                 <h2 className="px-[20px] py-[20py] text-[32px] font-bold ">
                   {item.by}
                 </h2>
