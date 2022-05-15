@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" flex bg-[#0B24FB] text-white space-x-[160px] sm:space-x-[716px]">
+    <div className=" flex bg-[#0B24FB] text-white space-x-[160px]">
       <div className="px-[24px] py-[24px] text-[12px] sm:px-[213px]">
         <span className="font-bold">wknd@</span>2020
       </div>
